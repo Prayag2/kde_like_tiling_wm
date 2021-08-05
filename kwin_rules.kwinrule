@@ -1,0 +1,33 @@
+[Application settings for krunner]
+Description=Application settings for krunner
+noborder=true
+noborderrule=3
+wmclass=krunner
+wmclassmatch=1
+
+[Application settings for plasma.emojier]
+Description=Application settings for plasma.emojier
+position=1056,439
+positionrule=3
+size=548,465
+sizerule=3
+wmclass=ibus-ui-emojier-plasma plasma.emojier
+wmclasscomplete=true
+wmclassmatch=1
+
+[Min size and decoration]
+Description=Min size and decoration
+minsize=1,1
+minsizerule=2
+noborderrule=3
+types=1
+
+[Window settings for yakuake]
+Description=Window settings for yakuake
+noborder=true
+noborderrule=3
+types=1
+windowrole=mainwindow#1
+windowrolematch=1
+wmclass=yakuake
+wmclassmatch=1
