@@ -1,0 +1,80 @@
+---
+distros:
+    arch:
+        pkg_man: "sudo pacman -S"
+        flags: "--needed"
+    ubuntu:
+        pkg_man: "sudo apt install"
+    fedora:
+        pkg_man: "sudo dnf install"
+
+dependencies:
+    arch:
+      - git
+      - cmake
+      - fasm
+      - lsb-release
+      - pkgconf
+    ubuntu:
+      - git
+      - cmake
+      - fasm
+      - lsb-release
+      - pkg-config
+      - libgtk-3-dev
+      - libgirepository1.0-dev
+      - python3-pip
+    fedora:
+      - git
+      - python3-pip
+      - cmake
+      - fasm
+      - pkgconf-pkg-config
+      - gtk+-devel
+      - gobject-introspection-devel
+
+
+install:
+    virtual-desktop-bar:
+        - git clone https://github.com/wsdfhjxc/virtual-desktop-bar
+        - arch:
+            - ./virtual-desktop-bar/scripts/install-dependencies-arch.sh
+          ubuntu:
+              - ./virtual-desktop-bar/scripts/install-dependencies-ubuntu.sh
+          fedora:
+              - ./virtual-desktop-bar/scripts/install-dependencies-fedora.sh
+        - ./virtual-desktop-bar/scripts/install-applet.sh
+    afetch:
+        - git clone https://github.com/sticky-tea/afetch
+        - cd afetch && fasm afetch.asm && chmod +x afetch && mkdir -p ~/.local/bin && mv ./afetch $_
+    krohnkite:
+        - wget https://github.com/esjeon/krohnkite/releases/download/v0.7/krohnkite-0.7.kwinscript
+        - plasmapkg2 -t kwinscript -i krohnkite-0.7.kwinscript
+        - mkdir -p ~/.local/share/kservices5/
+        - ln -s ~/.local/share/kwin/scripts/krohnkite/metadata.desktop ~/.local/share/kservices5/krohnkite.desktop
+    gtk3-nocsd:
+        - arch:
+            - sudo pamac install gtk3-nocsd
+          ubuntu:
+              - sudo apt install gtk3-nocsd
+          fedora:
+              - mkdir ~/.gtk3-nocsd && cd ~/.gtk3-nocsd
+              - git clone https://github.com/PCMan/gtk3-nocsd
+              - cd gtk3-nocsd && make
+              - echo "export GTK_CSD=0\nexport LD_PRELOAD=~/.gtk3-nocsd/libgtk3-nocsd.so.0" >> ~/.bashrc
+    breeze-gtk:
+        - arch:
+            - pacman -Syu breeze-gtk
+          ubuntu:
+              - sudo add-apt-repository ppa:kubuntu-ppa/backports -y
+              - sudo apt update && sudo apt install breeze-gtk-theme
+          fedora:
+              - sudo dnf install breeze-gtk
+    konsave:
+        - python3 -m pip install konsave
+        - echo "$PATH" | grep -q ~/.local/bin || echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc 
+        - ~/.local/bin/konsave -i tiling_wm_kde.knsv
+
+              
+              
+    
