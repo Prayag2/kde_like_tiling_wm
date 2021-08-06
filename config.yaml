@@ -14,7 +14,7 @@ dependencies:
       - cmake
       - fasm
       - lsb-release
-      - pkgco
+      - pkgconf
       - base-devel
     ubuntu:
       - git
@@ -35,17 +35,17 @@ dependencies:
 
 install:
   virtual-desktop-bar:
-        - git clone https://github.com/wsdfhjxc/virtual-desktop-bar
-        - arch:
-              - ./virtual-desktop-bar/scripts/install-dependencies-arch.sh
-          ubuntu:
-              - ./virtual-desktop-bar/scripts/install-dependencies-ubuntu.sh
-          fedora:
-              - ./virtual-desktop-bar/scripts/install-dependencies-fedora.sh
-        - ./virtual-desktop-bar/scripts/install-applet.sh
+      - git clone https://github.com/wsdfhjxc/virtual-desktop-bar
+      - arch:
+          - ./virtual-desktop-bar/scripts/install-dependencies-arch.sh
+        ubuntu:
+            - ./virtual-desktop-bar/scripts/install-dependencies-ubuntu.sh
+        fedora:
+            - ./virtual-desktop-bar/scripts/install-dependencies-fedora.sh
+      - ./virtual-desktop-bar/scripts/install-applet.sh
   afetch:
       - git clone https://github.com/sticky-tea/afetch
-        - cd afetch && fasm afetch.asm && chmod +x afetch && mkdir -p ~/.local/bin && mv ./afetch ~/.local/bin/afetch
+      - cd afetch && fasm afetch.asm && chmod +x afetch && mkdir -p ~/.local/bin && mv ./afetch ~/.local/bin/afetch
   krohnkite:
       - wget https://github.com/esjeon/krohnkite/releases/download/v0.7/krohnkite-0.7.kwinscript
       - plasmapkg2 -t kwinscript -i krohnkite-0.7.kwinscript
