@@ -1,0 +1,46 @@
+--- 
+distros:
+  arch:
+    pkg_man: "sudo pacman -S"
+    flags: "--needed"
+  ubuntu:
+    pkg_man: "sudo apt install"
+  fedora:
+    pkg_man: "sudo dnf install"
+
+dependencies:
+  arch:
+    - git
+  ubuntu:
+    - git
+  fedora:
+    - git
+
+install:
+  virtual-desktop-bar:
+    - ./virtual-desktop-bar/scripts/uninstall-applet.sh
+  afetch:
+    - rm ~/.local/bin/afetch
+    - rm -rf ./afetch
+  krohnkite:
+    - rm ~/.local/share/kservices5/krohnkite.desktop
+    - plasmapkg2 -t kwinscipt -r krohnkite
+  gtk3-nocsd:
+    - arch:
+      - sudo pacman -R gtk3-nocsd-git
+      - rm -rf ~/.gtk3-nocsd
+      ubuntu:
+        - sudo apt purge gtk3-nocsd
+      fedora:
+        - sed -i "\\export GTK_CSD=0\nexport LD_PRELOAD=~/.gtk3-nocsd/libgtk3-nocsd.so.0\\d" ~/.bashrc
+        - rm -rf ~/.gtk3-nocsd
+  breeze-gtk:
+    - arch:
+      - sudo pacman -R breeze-gtk
+      ubuntu:
+        - sudo apt purge breeze-gtk-theme
+      fedora:
+        - sudo dnf remove breeze-gtk
+  konsave:
+    - python3 -m pip uninstall konsave
+    - rm -rf ~/.config/konsave

@@ -3,6 +3,14 @@ This script will install some programs which will will help in making KDE Plasma
 For more info, read `steps.md`
 
 ## Usage
+#### Install dependencies
+Before proceeding, please install these dependencies:  
+###### Ubuntu/Debian/Mint
+`sudo apt install python3-pip`
+###### Arch/Manjaro/EndeavourOS
+`sudo pacman -S python-pip`
+###### Fedora
+`sudo dnf install python3-pip`
 #### Clone this repo  
 `git clone https://github.com/prayag2/kde_like_tiling_wm`
 #### Run the script  

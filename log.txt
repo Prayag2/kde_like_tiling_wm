@@ -1,0 +1,296 @@
+[06/08/2021 15:11:31]
+Traceback (most recent call last):
+  File "/home/prayag/Prayag/YouTube/Edit Files/kde_like_wm/./installer.sh", line 27, in inner_func
+    func()
+  File "/home/prayag/Prayag/YouTube/Edit Files/kde_like_wm/./installer.sh", line 138, in main
+    config = read_config(CONFIG_FILE)
+  File "/home/prayag/Prayag/YouTube/Edit Files/kde_like_wm/./installer.sh", line 66, in read_config
+    config = yaml.load(file.read(), Loader=yaml.SafeLoader)
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/__init__.py", line 114, in load
+    return loader.get_single_data()
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/parser.py", line 98, in check_event
+    self.current_event = self.state()
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/parser.py", line 438, in parse_block_mapping_key
+    raise ParserError("while parsing a block mapping", self.marks[-1],
+yaml.parser.ParserError: while parsing a block mapping
+  in "<unicode string>", line 37, column 3:
+      virtual-desktop-bar:
+      ^
+expected <block end>, but found '<block sequence start>'
+  in "<unicode string>", line 42, column 7:
+          - ./virtual-desktop-bar/scripts/ ... 
+          ^
+
+[06/08/2021 15:12:13]
+Traceback (most recent call last):
+  File "/home/prayag/Prayag/YouTube/Edit Files/kde_like_wm/./installer.sh", line 24, in inner_func
+    func()
+  File "/home/prayag/Prayag/YouTube/Edit Files/kde_like_wm/./installer.sh", line 135, in main
+    config = read_config(CONFIG_FILE)
+  File "/home/prayag/Prayag/YouTube/Edit Files/kde_like_wm/./installer.sh", line 63, in read_config
+    config = yaml.load(file.read(), Loader=yaml.SafeLoader)
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/__init__.py", line 114, in load
+    return loader.get_single_data()
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/parser.py", line 98, in check_event
+    self.current_event = self.state()
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/parser.py", line 438, in parse_block_mapping_key
+    raise ParserError("while parsing a block mapping", self.marks[-1],
+yaml.parser.ParserError: while parsing a block mapping
+  in "<unicode string>", line 37, column 3:
+      virtual-desktop-bar:
+      ^
+expected <block end>, but found '<block sequence start>'
+  in "<unicode string>", line 42, column 7:
+          - ./virtual-desktop-bar/scripts/ ... 
+          ^
+
+[06/08/2021 15:12:35]
+Traceback (most recent call last):
+  File "/home/prayag/Prayag/YouTube/Edit Files/kde_like_wm/./installer.sh", line 23, in inner_func
+    func()
+  File "/home/prayag/Prayag/YouTube/Edit Files/kde_like_wm/./installer.sh", line 134, in main
+    config = read_config(CONFIG_FILE)
+  File "/home/prayag/Prayag/YouTube/Edit Files/kde_like_wm/./installer.sh", line 62, in read_config
+    config = yaml.load(file.read(), Loader=yaml.SafeLoader)
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/__init__.py", line 114, in load
+    return loader.get_single_data()
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/parser.py", line 98, in check_event
+    self.current_event = self.state()
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/parser.py", line 438, in parse_block_mapping_key
+    raise ParserError("while parsing a block mapping", self.marks[-1],
+yaml.parser.ParserError: while parsing a block mapping
+  in "<unicode string>", line 37, column 3:
+      virtual-desktop-bar:
+      ^
+expected <block end>, but found '<block sequence start>'
+  in "<unicode string>", line 42, column 7:
+          - ./virtual-desktop-bar/scripts/ ... 
+          ^
+
+[06/08/2021 15:14:21]
+Traceback (most recent call last):
+  File "/home/prayag/Prayag/YouTube/Edit Files/kde_like_wm/./installer.sh", line 23, in inner_func
+    func()
+  File "/home/prayag/Prayag/YouTube/Edit Files/kde_like_wm/./installer.sh", line 134, in main
+    config = read_config(CONFIG_FILE)
+  File "/home/prayag/Prayag/YouTube/Edit Files/kde_like_wm/./installer.sh", line 62, in read_config
+    config = yaml.load(file.read(), Loader=yaml.SafeLoader)
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/__init__.py", line 114, in load
+    return loader.get_single_data()
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/parser.py", line 98, in check_event
+    self.current_event = self.state()
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/parser.py", line 438, in parse_block_mapping_key
+    raise ParserError("while parsing a block mapping", self.marks[-1],
+yaml.parser.ParserError: while parsing a block mapping
+  in "<unicode string>", line 37, column 3:
+      virtual-desktop-bar:
+      ^
+expected <block end>, but found '<block sequence start>'
+  in "<unicode string>", line 42, column 7:
+          - ./virtual-desktop-bar/scripts/ ... 
+          ^
+
+[06/08/2021 15:18:41]
+Traceback (most recent call last):
+  File "/home/prayag/Prayag/YouTube/Edit Files/kde_like_wm/./installer.sh", line 22, in inner_func
+    func(CONFIG_FILE)
+  File "/home/prayag/Prayag/YouTube/Edit Files/kde_like_wm/./installer.sh", line 133, in main
+    config = read_config(CONFIG_FILE)
+  File "/home/prayag/Prayag/YouTube/Edit Files/kde_like_wm/./installer.sh", line 61, in read_config
+    config = yaml.load(file.read(), Loader=yaml.SafeLoader)
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/__init__.py", line 114, in load
+    return loader.get_single_data()
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/parser.py", line 98, in check_event
+    self.current_event = self.state()
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/parser.py", line 438, in parse_block_mapping_key
+    raise ParserError("while parsing a block mapping", self.marks[-1],
+yaml.parser.ParserError: while parsing a block mapping
+  in "<unicode string>", line 37, column 3:
+      virtual-desktop-bar:
+      ^
+expected <block end>, but found '<block sequence start>'
+  in "<unicode string>", line 42, column 7:
+          - ./virtual-desktop-bar/scripts/ ... 
+          ^
+
+[06/08/2021 15:21:09]
+Traceback (most recent call last):
+  File "/home/prayag/Prayag/YouTube/Edit Files/kde_like_wm/./installer.sh", line 22, in inner_func
+    func(CONFIG_FILE)
+  File "/home/prayag/Prayag/YouTube/Edit Files/kde_like_wm/./installer.sh", line 133, in main
+    config = read_config(CONFIG_FILE)
+  File "/home/prayag/Prayag/YouTube/Edit Files/kde_like_wm/./installer.sh", line 61, in read_config
+    config = yaml.load(file.read(), Loader=yaml.SafeLoader)
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/__init__.py", line 114, in load
+    return loader.get_single_data()
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/parser.py", line 98, in check_event
+    self.current_event = self.state()
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/parser.py", line 438, in parse_block_mapping_key
+    raise ParserError("while parsing a block mapping", self.marks[-1],
+yaml.parser.ParserError: while parsing a block mapping
+  in "<unicode string>", line 37, column 3:
+      virtual-desktop-bar:
+      ^
+expected <block end>, but found '<block sequence start>'
+  in "<unicode string>", line 42, column 7:
+          - ./virtual-desktop-bar/scripts/ ... 
+          ^
+
+[06/08/2021 15:21:54]
+Traceback (most recent call last):
+  File "/home/prayag/Prayag/YouTube/Edit Files/kde_like_wm/./installer.sh", line 22, in inner_func
+    func(CONFIG_FILE)
+  File "/home/prayag/Prayag/YouTube/Edit Files/kde_like_wm/./installer.sh", line 133, in main
+    config = read_config(CONFIG_FILE)
+  File "/home/prayag/Prayag/YouTube/Edit Files/kde_like_wm/./installer.sh", line 61, in read_config
+    config = yaml.load(file.read(), Loader=yaml.SafeLoader)
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/__init__.py", line 114, in load
+    return loader.get_single_data()
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/parser.py", line 98, in check_event
+    self.current_event = self.state()
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/parser.py", line 438, in parse_block_mapping_key
+    raise ParserError("while parsing a block mapping", self.marks[-1],
+yaml.parser.ParserError: while parsing a block mapping
+  in "<unicode string>", line 37, column 3:
+      virtual-desktop-bar:
+      ^
+expected <block end>, but found '<block sequence start>'
+  in "<unicode string>", line 42, column 7:
+          - ./virtual-desktop-bar/scripts/ ... 
+          ^
+
+[06/08/2021 15:22:36]
+Traceback (most recent call last):
+  File "/home/prayag/Prayag/YouTube/Edit Files/kde_like_wm/./installer.sh", line 22, in inner_func
+    func(CONFIG_FILE)
+  File "/home/prayag/Prayag/YouTube/Edit Files/kde_like_wm/./installer.sh", line 133, in main
+    config = read_config(CONFIG_FILE)
+  File "/home/prayag/Prayag/YouTube/Edit Files/kde_like_wm/./installer.sh", line 61, in read_config
+    config = yaml.load(file.read(), Loader=yaml.SafeLoader)
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/__init__.py", line 114, in load
+    return loader.get_single_data()
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/parser.py", line 98, in check_event
+    self.current_event = self.state()
+  File "/home/prayag/.local/lib/python3.9/site-packages/yaml/parser.py", line 438, in parse_block_mapping_key
+    raise ParserError("while parsing a block mapping", self.marks[-1],
+yaml.parser.ParserError: while parsing a block mapping
+  in "<unicode string>", line 37, column 3:
+      virtual-desktop-bar:
+      ^
+expected <block end>, but found '<block sequence start>'
+  in "<unicode string>", line 42, column 7:
+          - ./virtual-desktop-bar/scripts/ ... 
+          ^
+

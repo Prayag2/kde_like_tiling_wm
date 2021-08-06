@@ -6,7 +6,6 @@ from datetime import datetime
 
 
 # VARS AND OTHER
-CONFIG_FILE = './config.yaml'
 REQUIREMENTS = ["pyyaml"]
 
 
@@ -18,9 +17,9 @@ def log(msg: str, new_line = False) -> None:
 
 
 def handle_errors(func):
-    def inner_func():
+    def inner_func(CONFIG_FILE):
         try:
-            func()
+            func(CONFIG_FILE)
         except Exception as error:
             dateandtime = datetime.now().strftime("[%d/%m/%Y %H:%M:%S]")
             current_dir = os.getcwd()
@@ -128,7 +127,7 @@ def install(config: dict, distro, distros) -> None:
 
 # MAIN
 @handle_errors
-def main() -> None:
+def main(CONFIG_FILE) -> None:
     install_py_req(REQUIREMENTS)
 
     config = read_config(CONFIG_FILE)
@@ -142,4 +141,17 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-    main()
+    usage = "Please provide an argument.\nTo install: ./installer.sh install\nTo uninstall: ./installer.sh uninstall"
+    if len(sys.argv) < 2:
+        log(usage)
+        sys.exit(0)
+    argument = sys.argv[1]
+    if argument == "install":
+        CONFIG_FILE = "config.yaml"
+    elif argument == "uninstall":
+        CONFIG_FILE = "uninstall.yaml"
+    else:
+        log(usage)
+        sys.exit(0)
+
+    main(CONFIG_FILE)
