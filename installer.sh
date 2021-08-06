@@ -85,7 +85,7 @@ def install_py_req(requirements: list) -> None:
     missing = set(requirements) - installed
 
     err_msg = "Couldn't setup Python. Please read the README.md for more info"
-    success_msg = "Python setup successfully!"
+    success_msg = "Python setup successfully! Please run the script again to continue."
     if missing:
         log("Setting up Python...")
         requires = " ".join(requirements)
@@ -93,6 +93,7 @@ def install_py_req(requirements: list) -> None:
                     err_msg, success_msg,
                     alt_cmd=f"pip install {requires}",
                     raise_exception=False)
+        sys.exit(0)
 
 
 def install_dependencies(config: dict, distro_name: str) -> None:
