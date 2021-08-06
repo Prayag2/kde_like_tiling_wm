@@ -14,6 +14,9 @@ Before proceeding, please install these dependencies:
 #### Clone this repo  
 `git clone https://github.com/prayag2/kde_like_tiling_wm`
 #### Run the script  
-`cd kde_like_tiling_wm && ./installer.sh`
+`cd kde_like_tiling_wm`  
+`./installer.sh install`
+#### Uninstall
+`./installer.sh uninstall`
 
 Please report if you face any issues. Currently only Ubuntu/Debian, Arch/Manjaro and Fedora based distros are supported. If you want to install these things on other distros, read the `steps.md` file.
